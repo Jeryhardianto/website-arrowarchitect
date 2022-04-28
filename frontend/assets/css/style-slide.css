@@ -1,0 +1,184 @@
+.overlay-slider {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #F5F5F1;
+    z-index: 998;
+    transition: visibility 0s, opacity 0.7s linear;
+    opacity: 1;
+}
+
+.title-project {
+    position: absolute;
+    font-size: 14px;
+    top: 120px;
+    left: 47%;
+    right: auto;
+}
+
+/* .prev {
+    display: none !important;
+}
+
+.next {
+    display: none !important;
+}
+
+.active-item-prev{
+    display: block !important;
+}
+
+.active-item-next{
+    display: block !important;
+} */
+.active-overlay-slider {
+    display: block !important;
+}
+
+.hide-project-detail {
+    visibility: hidden;
+    /* display: none !important; */
+}
+
+.bottom-slider {
+    border: 1px solid black;
+    width: 100%;
+    height: 20px;
+}
+.bottom-slider span{
+    margin: 10px;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+.logo-overlay {
+    position: absolute;
+    margin-top: 30px;
+    left: 250px;
+}
+.logo-overlay img {
+    width: 95px;
+}
+#dismiss-slider {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    /* background: var(--grey); */
+    position: absolute;
+    top: 50px;
+    right: 250px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#slide-detail-project{
+    margin-top: 150px;
+}
+/* #slide-detail-project .item img{
+    background-size: cover;
+    width: 101%;
+    height: 70vh;
+} */
+.owl-carousel {
+    margin-top: 10%;
+}
+.owl-nav {
+    position: absolute;
+    top: 32vh;
+    width: 100%;
+}
+.owl-theme .owl-nav {
+    margin-top: 0;
+}
+.owl-theme .owl-nav [class*=owl-] {
+    border-radius: 0;
+}
+.owl-nav button.owl-prev {
+    width: 50px;
+    height: 50px;
+    /* position: absolute;
+    left: 310px; */
+}
+
+.owl-nav button.owl-next {
+    width: 50px;
+    height: 50px;
+    /* position: absolute;
+    right: 330px; */
+   
+}
+.owl-nav button img{
+    width: 22%;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+    background-color: #F5F5F1;
+}
+
+.owl-carousel .center  {
+    opacity: 1;
+    transition: all 1ms ease-in-out;
+}
+.owl-item {
+    opacity: 0.3;
+}
+
+.prev,
+.next {
+    background-color: #F5F5F1;
+    cursor: pointer;
+}
+.item-slide {
+    width: 100%;
+}
+.item-slide .prev {
+    top: 30vh;
+    z-index: 99;
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 50px;
+}
+.item-slide .prev img {
+    width: 30%;
+    padding-top: 10px;
+}
+
+.item-slide .next {
+    top: 30vh;
+    z-index: 99;
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 50px;
+}
+.item-slide .next img {
+    width: 30%;
+    padding-top: 10px;
+}
+
+.item-img {
+    height: 500px;
+    width:100%;
+    object-fit: cover;
+    /* margin-right: 50px;
+    margin-left: 50px; */
+}
+
+.owl-item .prev {
+    visibility: hidden;
+    transition: all 1ms ease-in;
+}
+.owl-item .next {
+    visibility: hidden;
+    transition: all 1ms ease-in;
+}
+.center .prev {
+    visibility: visible;
+    transition: all 1ms ease-out;
+}
+.center .next {
+    visibility: visible;
+    transition: all 1ms ease-out;
+}
