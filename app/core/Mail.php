@@ -5,7 +5,7 @@
 
   function kirim_email($email_penerima, $nama_penerima, $judul_email, $isi_email)
   {
-      $email_pengirim        = "blatak29@gmail.com";
+      $email_pengirim        = "jery@intelove.com";
       $nama_pengirim         = PROJECT;
 
       //Load Composer's autoloader
@@ -16,7 +16,7 @@
 
       try {
           //Server settings
-        $pass = "&Q<YTKUwM?3T!'Ag";
+        $pass = "jeryhorus191120";
         // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
         $mail->SMTPDebug = false;                      //Enable verbose debug output
         $mail->isSMTP();                                            //Send using SMTP

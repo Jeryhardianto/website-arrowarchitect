@@ -27,19 +27,20 @@
 <body>
     <div id="klik">
         <div class="wrapper">
+
             <!-- Sidebar  -->
             <nav id="sidebar">
 
                 <div class="sidebar-header">
-                assets
+                    <img src="<?= BASEURL ?>/assets/frontend/img/logo-light.png" class="logo-sidebar" alt="">
                 </div>
 
                 <ul class="list-unstyled components">
-                    <li class="active-list">
-                        <a href="list-project.html">projects</a>
-                    </li>
                     <li>
-                        <a href="<?= BASEURL ?>/_about">About Us</a>
+                        <a href="<?= BASEURL ?>/_project">projects</a>
+                    </li>
+                    <li class="mid-about">
+                        <a href="<?= BASEURL ?>/_about">About US</a>
                     </li>
                     <li>
                         <a href="<?= BASEURL ?>/_contact">Contact</a>
@@ -48,7 +49,7 @@
                         <a href="<?= BASEURL ?>/_contact">
                             <div class="link-cons">
                                 <center class="my-2">
-                                    <span>BOOK A FREE CONSULTATION</span>
+                                    <span>FREE CONSULTATION</span>
                                 </center>
                             </div>
                         </a>
@@ -79,8 +80,8 @@
             </nav>
 
             <!-- Page Content  -->
-            <div id="content" class="p-0">
-
+            <div id="content" class="contact-us">
+               
                 <nav id="klik" class="navbar navbar-expand-lg bg-transparent" style="box-shadow: none;">
                     <a href="<?= BASEURL ?>">
                         <img src="assets/img/logo-dark.png" class="logo-sidebar" alt="">
@@ -90,47 +91,107 @@
                     </a>
                 </nav>
 
-                <div id="list-produk" class="mt-4">
-                    <?php 
-                        foreach ($data['project'] as $prj) :
-                    ?>
-                    <a href="<?= BASEURL ?>/_project/_detail_project/<?= $prj['id'] ?>">
-                        <div class="card my-4 produk">
-                            <div class="row">
-                                <div class="col-md-4 col-12 card-body">
-                                    <div class="left-konten">
-                                        <span class="card-text font-white">PROJECT</span>
-                                        <h5 class="card-title my-2 font-white"><?= $prj['nama_project'] ?></h5>
-                                        <div class="btn-produk col-5">
-                                            <div class="my-2">VIEW GALLERY</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-img-top col-md-8 col-12">
-                                    <div class="img-produk-body">
-                                        <img src="<?= BASEURL ?>/assets/upload/<?= $prj['gambar'] ?>" class="w-100 img-produk" alt="">
-                                    </div>
-                                </div>
-                            </div>
+                <div class="container p-0">
+                    <div class="row">
+                        <div class="col-md-12 my-3 mb-5">
+                            <h4 class="my-2 title-contact">CONTACT US</h4>
                         </div>
-                    </a>
-                    <?php endforeach; ?>
-
-
+                        <div class="col-md-6">
+                            <p class="text-justify text-dark" style="font-size: 16px;">
+                                From large-scale remodels to a simple quick makeover, the design team at Amber Interiors will expertly reflect your personal taste and style.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="text-justify text-dark" style="font-size: 16px;">
+                                <span>
+                                    Condongcatur
+                                </span>
+                                <br>
+                                <span>
+                                    Yogyakarta 55283
+                                </span>
+                                <br>
+                                <br>
+                                <span>
+                                    0812 1262 7162
+                                </span>
+                                <br>
+                                <span>
+                                    instagram: 
+                                    <a href="https://www.instagram.com/arrow_architecture/" class="ig-link" target="_blank">
+                                        arrow_architecture
+                                    </a>
+                                </span>
+                                <br>
+                                <span>
+                                    <a href="mailto:hello@arrowarchitecture.com" target="_blank">
+                                        hello@arrowarchitecture.com
+                                    </a>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="col-md-12 my-5">
+                            <hr class="my-2" style="height:2px;border-width:0;color:gray;background-color:gray">
+                        </div>
+                        <div class="col-md-6">
+                            <p class="text-justify text-dark" style="font-size: 16px;">
+                                If you are interested in our design services and have a potential project, please complete the form below and one of our team members will be in touch.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
+                <div class="container p-0 mt-2" id="contact">
+                    <form action="<?= BASEURL ?>/_contact/sendEmail" method="post" >
+                        <div class="row">
+                            <div class="col-md-6 my-3">
+                                <input type="text" class="w-100 input-contact" name="firstname" id="exampleFormControlInput1" placeholder="First Name">
+                            </div>
+                            <div class="col-md-6 my-3">
+                                <input type="text" class="w-100 input-contact" name="lastname" id="exampleFormControlInput1" placeholder="Last Name">
+                            </div>
+                            <div class="col-md-6 my-3">
+                                <input type="text" class="w-100 input-contact" name="telp" id="exampleFormControlInput1" placeholder="Telephone">
+                            </div>
+                            <div class="col-md-6 my-3">
+                                <input type="email" class="w-100 input-contact" name="email" id="exampleFormControlInput1" placeholder="Email">
+                            </div>
+                            <div class="col-md-6 my-3">
+                                <input type="text" class="w-100 input-contact" name="propertyaddress" id="exampleFormControlInput1" placeholder="Property Address">
+                            </div>
+                            <div class="col-md-6 my-3">
+                                <input type="text" class="w-100 input-contact" name="sfp" id="exampleFormControlInput1" placeholder="Square Footage of Property">
+                            </div>
+                            <div class="col-md-6 my-3">
+                                <input type="text" class="w-100 input-contact" name="ecb" id="exampleFormControlInput1" placeholder="Estimated Construction Budget">
+                            </div>
+                            <div class="col-md-6 my-3">
+                                <input type="text" class="w-100 input-contact" name="efdb" id="exampleFormControlInput1" placeholder="Estimated Furniture & Decor Budget">
+                            </div>
+                            <div class="col-md-12 my-3">
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Scope of Work to Be Included*</label>
+                                    <textarea class="area-contact" name="scwbi" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                  </div>
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <button class="btn btn-form" type="submit">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
                 <footer class="footer-section">
                     <div>
                         <div class="row">
                             <div class="col-md-6 my-1">
                                 <div class="footer-left">
                                     <div>
-                                        <a href="<?= BASEURL ?>/_contact">
+                                        <a href="">
                                             CONTACT
                                         </a>
                                     </div>
                                     <div>
-                                        <a href="" style="font-weight: lighter;">
+                                        <a href="" style="font-weight: lighter;letter-spacing: 0em;">
                                             hello@arrowarchitecture.com
                                         </a>
                                     </div>
@@ -142,24 +203,24 @@
                                         <a href="https://www.instagram.com/arrow_architecture/" target="_blank">
                                             <i class="fa fa-instagram font-sosmed"></i>
                                         </a>
-                                        /
+                                        
                                         <a href="https://www.facebook.com/arrowarchitect/" target="_blank">
                                             <i class="fa fa-facebook font-sosmed"></i>
                                         </a>
-                                        /
+                                        
                                         <a href="https://twitter.com/arrow_arch" target="_blank">
                                             <i class="fa fa-twitter font-sosmed"></i>
                                         </a>
-                                        /
+                                        
                                         <a href="https://www.youtube.com/channel/UCVEKkDIHhnzS5J5sBsHLERg" target="_blank">
                                             <i class="fa fa-youtube-play font-sosmed"></i>
                                         </a>
                                     </div>
-                                    <div>
+                                    <!-- <div>
                                         <a href="">
                                             TERMS + CONDITIONS
                                         </a>
-                                    </div>
+                                    </div> -->
                                     <div>
                                         <a href="">
                                             CREDITS
@@ -173,7 +234,7 @@
             </div>
         </div>
     </div>
-   <div class="overlay">
+    <div class="overlay">
         <div id="dismiss">
             <img src="<?= BASEURL ?>/assets/frontend/img/x-light.png" class="w-75" alt="" srcset="">
         </div>
@@ -181,6 +242,7 @@
     <div id="dismiss-sidebar" class="dismiss-sidebar">
     <img src="<?= BASEURL ?>/assets/frontend/img/x-light.png" class="w-75" alt="" srcset="">
 </div>
+
 <!-- jQuery CDN - Slim version (=without AJAX) -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <!-- Popper.JS -->
@@ -192,6 +254,10 @@
 
 <script src="<?= BASEURL ?>/assets/frontend/js/owl.carousel.min.js"></script>
 <script src="<?= BASEURL ?>/assets/frontend/js/style.js"></script>
+<script src="<?= BASEURL ?>/assets/backend/js/sweetalert2.all.min.js"></script>
+<?php
+FlasherAlert::flashA();
+?>
 
 </body>
 

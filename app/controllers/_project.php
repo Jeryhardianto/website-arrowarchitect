@@ -4,7 +4,9 @@ class _project extends Controller
 {
     public function index()
     {
-        $data['project'] = $this->model('Project_model')->getAllProject(1);
+        $data['project'] = $this->model('Project_model')->getAllProject();
+
+       
 
         $this->view('frontend/templates/header');
         $this->view('frontend/project', $data);

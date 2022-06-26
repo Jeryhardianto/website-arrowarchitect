@@ -1,0 +1,46 @@
+.left-konten .card-text {
+    letter-spacing: 0.25em;
+}
+.btn-produk {
+    letter-spacing: 0.25em;
+    font-size: 14px;
+}
+.footer-left a {
+    margin-left: 10px;
+    margin-right: 10px;
+    letter-spacing: 0.25em;
+    color: #343332;
+}
+.footer-right a {
+    margin-left: 10px;
+    margin-right: 10px;
+    letter-spacing: 0.25em;
+    color: #343332;
+}
+.footer-section {
+    margin: 100px 80px 50px 80px;
+}
+.logo-sidebar-project-details {
+    width: 105px !important;
+    top: 20px;
+}
+.footer-section-detail-project {
+    margin: 100px 30px 50px 30px;
+}
+.text-2 {
+    text-transform: none;
+}
+.text-2 a{
+    margin-right: 15px;
+}
+.title-project{
+    letter-spacing: 0.25em;
+    font-weight: bold !important;
+}
+.bottom-slider span {
+    letter-spacing: 0.25em;
+    font-weight: bold;
+}
+.title-contact {
+    letter-spacing: 0.25em;
+}

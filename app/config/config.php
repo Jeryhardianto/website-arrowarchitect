@@ -1,8 +1,9 @@
 <?php 
 
-define('BASEURL', 'http://localhost:8012/arrow-dev/public');
+// define('BASEURL', 'http://localhost/arrow-dev/public');
+define('BASEURL', 'http://arrow-dev.test');
 
-const BASELOKSAVE = 'C:\laragon\www\arrow-dev';
+const BASELOKSAVE = 'F:\laragon\www\arrow-dev';
 
 // DB
 define('DB_HOST', 'localhost');

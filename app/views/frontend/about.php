@@ -80,22 +80,90 @@
             </nav>
 
             <!-- Page Content  -->
-            <div id="content">
+            <div id="content" class="about-us">
+               
+                <nav id="klik" class="navbar navbar-expand-lg bg-transparent" style="box-shadow: none;">
+                    <a href="<?= BASEURL ?>">
+                        <img src="assets/img/logo-dark.png" class="logo-sidebar" alt="">
+                    </a>
+                    <a type="button" id="sidebarCollapse" class="btn btn-menu bg-transparent">
+                        <span class="menu-dark"><strong>MENU</strong></span>
+                    </a>
+                </nav>
 
-                <div class="cover-overlay">
-                    <div class="bg-animate">
-                        <nav class="navbar navbar-expand-lg bg-transparent" style="box-shadow: none;">
-                            <a type="button" id="sidebarCollapse" class="btn btn-menu bg-transparent">
-                                <span class="menu-dark text-white"><strong>MENU</strong></span>
-                            </a>
-                        </nav>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-12">
+                            <h4 class="mt-2">ABOUT US</h4>
+                        </div>
+                        <div class="col-md-9 col-9 col-12">
+                            <p class="text-justify">
+                                
+                                From large-scale remodels to a simple quick makeover, the design team at Amber Interiors will expertly reflect your personal taste and style.
 
-                        <div class="banner">
-                            <img src="<?= BASEURL ?>/assets/frontend/img/logo-banner.png" class="w-75" alt="" srcset="">
+                                Amber Interiors is a full-service residential design firm assisting clients with a wide range of challenges including, selection of architectural details and finishes, collaborating with architects and builders, decorating a functional beautiful space with furniture, fabrics, accessories, and creating custom pieces tailor-made for your living space.
+
+                                Contact us to request an in-person design consultation.
+                            </p>
+                        </div>
+                        <br>
+                        <div class="col-md-12 col-12">
+                            <img src="assets/img/slider/bg.jpg" class="w-100 my-2 mt-3" alt="">
                         </div>
                     </div>
                 </div>
 
+                <footer class="footer-section">
+                    <div>
+                        <div class="row">
+                            <div class="col-md-6 my-1">
+                                <div class="footer-left">
+                                    <div>
+                                        <a href="">
+                                            CONTACT
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="" style="font-weight: lighter;letter-spacing: 0em;">
+                                            hello@arrowarchitecture.com
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 my-1">
+                                <div class="footer-right">
+                                    <div>
+                                        <a href="https://www.instagram.com/arrow_architecture/" target="_blank">
+                                            <i class="fa fa-instagram font-sosmed"></i>
+                                        </a>
+                                        
+                                        <a href="https://www.facebook.com/arrowarchitect/" target="_blank">
+                                            <i class="fa fa-facebook font-sosmed"></i>
+                                        </a>
+                                        
+                                        <a href="https://twitter.com/arrow_arch" target="_blank">
+                                            <i class="fa fa-twitter font-sosmed"></i>
+                                        </a>
+                                        
+                                        <a href="https://www.youtube.com/channel/UCVEKkDIHhnzS5J5sBsHLERg" target="_blank">
+                                            <i class="fa fa-youtube-play font-sosmed"></i>
+                                        </a>
+                                    </div>
+                                    <!-- <div>
+                                        <a href="">
+                                            TERMS + CONDITIONS
+                                        </a>
+                                    </div> -->
+                                    <div>
+                                        <a href="">
+                                            CREDITS
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
             </div>
         </div>
     </div>
@@ -119,6 +187,10 @@
 
 <script src="<?= BASEURL ?>/assets/frontend/js/owl.carousel.min.js"></script>
 <script src="<?= BASEURL ?>/assets/frontend/js/style.js"></script>
+<script src="<?= BASEURL ?>/assets/backend/js/sweetalert2.all.min.js"></script>
+<?php
+FlasherAlert::flashA();
+?>
 
 </body>
 
