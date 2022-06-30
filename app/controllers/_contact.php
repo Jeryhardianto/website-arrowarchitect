@@ -115,7 +115,7 @@ class _contact extends Controller
         <center>
             <div class="box">
                 <div>
-                    <img src="https://tamu.id/assets/images/headerMail.png" style="max-width: 600px; border-radius: 5px 5px 0 0" alt="" />
+                    <img src="https://nos.wjv-1.neo.id/myapp/project/header.png" style="max-width: 600px; border-radius: 5px 5px 0 0" alt="" />
                 </div>
                 <div class="box-body">
                     <br />
@@ -139,7 +139,7 @@ class _contact extends Controller
 
 
                 <div style="
-                           background-image: url(https://tamu.id/assets/images/footerMail.png);
+                           background-image: url(https://nos.wjv-1.neo.id/myapp/project/footer.png);
                            background-repeat: no-repeat;
                            background-size: cover;
                            height: 80px;
@@ -147,7 +147,6 @@ class _contact extends Controller
                            border-radius: 0 0 5px 5px;">
                     <div>
                         <p style="color: white">
-                            <br /> Present by <a href="tamu.id" style="color: white">TAMU.ID</a>
                             <br /> Copyright '.date('Y').' '.PROJECT.'  - All Rights Reserved.
                         </p>
                     </div>

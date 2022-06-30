@@ -170,5 +170,20 @@ class Project_model
         return $this->db->rowCount();
     }
 
+    public function getNextProjectById($id)
+    {
+        $query = "SELECT * FROM project WHERE id = (SELECT min(id) FROM project WHERE id > :id)";
+        $this->db->query($query);
+        $this->db->bind('id', $id);
+        return $this->db->resultSet();
+    }
+    public function getProviousProjectById($id)
+    {
+        $query = "SELECT * FROM project WHERE id = (SELECT min(id) FROM project WHERE id < :id)";
+        $this->db->query($query);
+        $this->db->bind('id', $id);
+        return $this->db->resultSet();
+    }
+
 
 }

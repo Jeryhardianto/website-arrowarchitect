@@ -271,16 +271,27 @@
                                     </li>
                                 </ul>
                                 <ul id="p-n" class="list-unstyled CTAs">
+                                <?php 
+                                    foreach ($data['provious_project'] as $pp): 
+                                ?>
                                     <li class="mr-4" style="flex-grow: 5;">
-                                       <a href="">
+                                       <a href="<?= BASEURL ?>/_project/_detail_project/<?= $pp['id'] ?>">
                                             Previous
                                        </a>
                                     </li>
+                                 <?php
+                                    endforeach;
+                                  ?>
+                                    <?php 
+                                    foreach ($data['next_project'] as $np): ?>
                                     <li>
-                                        <a href="">
+                                        <a href="<?= BASEURL ?>/_project/_detail_project/<?= $np['id'] ?>">
                                             Next
                                         </a>
                                     </li>
+                                    <?php
+                                    endforeach;
+                                    ?>
                                 </ul>
                             </div>
                         </div>
